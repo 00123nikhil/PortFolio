@@ -8,7 +8,11 @@
 }
 :root {
   --bg-color-primary: #111827;
-  --color-primary1: yellow;
+  --color-1: yellow;
+  --color-2: #fff;
+}
+.container {
+  padding: 10px 10%;
 }
 
 html {
@@ -16,7 +20,7 @@ html {
 }
 body {
   background: #080808;
-  color: #fff;
+  color: var(--color-2);
   background-color: var(--bg-color-primary);
 }
 #header {
@@ -28,9 +32,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: 80%;
 }
-.container {
-  padding: 10px 10%;
-}
+
 nav {
   display: flex;
   align-items: center;
@@ -60,14 +62,14 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-2);
   font-size: 18px;
   position: relative;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-2);
   font-size: 16px;
   position: relative;
   padding: 5px;
@@ -76,7 +78,7 @@ nav ul li a {
   border-radius: 7px;
 }
 nav ul li a:hover {
-  background-color: var(--color-primary1);
+  background-color: var(--color-1);
   color: black;
   border-radius: 7px;
 }
@@ -89,7 +91,7 @@ nav ul li a:hover {
   font-size: 60px;
 }
 .header-text h1 span {
-  color: var(--color-primary1);
+  color: var(--color-1);
 }
 
 section {
@@ -115,7 +117,7 @@ section {
   color: #ebd9d9;
 }
 .sub-title {
-  background-color: var(--color-primary1);
+  background-color: var(--color-1);
   color: black;
   padding: 5px;
   border-radius: 5px;
@@ -161,15 +163,16 @@ section {
   border-bottom: 2px solid yellow;
   margin-bottom: 10px;
 }
-.Project-col2 p{
-  text-align: justify;
+.Project-col2 p {
+  /* text-align: justify; */
   font-size: 14px;
 }
+
 .Project-col2 h4 {
   margin-top: 10px;
-  color: var(--color-primary1);
+  color: var(--color-1);
 }
-.Project-col2 div span i{
+.Project-col2 div span i {
   font-size: 1.6rem;
 }
 .Project-live {
@@ -177,10 +180,10 @@ section {
   justify-content: center;
 }
 .P-btn1 {
-  background-color: var(--color-primary1);
+  background-color: var(--color-1);
   padding: 10px 30px;
   border-radius: 5px;
-  border: 2px solid var(--color-primary1);
+  border: 2px solid var(--color-1);
   font-size: 16px;
   cursor: pointer;
 }
@@ -200,5 +203,5 @@ section {
 }
 
 .copyright i {
-  color: var(--color-primary1);
+  color: var(--color-1);
 }
