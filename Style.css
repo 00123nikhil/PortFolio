@@ -10,6 +10,7 @@
   --bg-color-primary: #111827;
   --color-1: #ffff00;
   --color-2: #fff;
+  --color-3: #85e885;
 }
 /* -------uitiliy classes---- */
 .container {
@@ -55,7 +56,7 @@ nav {
   left: 0;
   z-index: 1000;
   background-color: #18233ab9;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 1px 5px black;
 
   /* rgba(114, 105, 105, 0.586) */
 }
@@ -213,34 +214,42 @@ section {
   background-color: var(--bg-color-primary);
   min-height: 650px;
 }
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-.services-list div {
-  background: #26262644;
-  box-shadow: 2px 2px 3px yellow;
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 13px;
-  font-weight: 300;
-  border-right: 10px;
-  text-align: center;
-  transition: background 0.5s, transform 0.5s;
-}
-.services-list div i {
-  font-size: 80px;
-  margin-bottom: 30px;
-}
 
 .services-list div:hover {
   background: var(--color-1);
   transform: translateY(-10px);
   color: black;
 }
+
+.skilllist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.skill-col1 {
+  max-width: 400px;
+  font-size: 20px;
+}
+.skill-col2 {
+  columns: 3;
+  column-gap: 50px;
+}
+.skill-columns p {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px 20px 15px;
+  margin-bottom: 20px;
+  background-color: #262626;
+  box-shadow: 2px 2px 5px yellow;
+}
+
+.skill-columns span {
+  color: var(--color-3);
+  font-weight: 699;
+  padding: 5px;
+}
+
 /* -------Projects---------- */
 #Projects {
   padding: 50px 0;
@@ -262,13 +271,13 @@ section {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: 3px 3px 5px yellow;
+  box-shadow: 1px 0px 5px yellow;
 }
 .work img {
   width: 100%;
   border-radius: 10px;
   display: block;
-  height: 400px;
+  height: 300px;
   background-size: cover;
   transition: transform 0.5s;
 }
@@ -544,6 +553,9 @@ nav .fa-solid {
     font-size: 16px;
     margin-right: 20px;
   }
+  .skill-col2 {
+    columns: 1;
+  }
 
   .contact-left,
   .contact-right {
@@ -553,7 +565,41 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
+
+  
 }
+
+/* for medium devices */
+/* @media screen and (min-width: 768px){
+.header-text{
+  margin-top: 20px;
+  font-size: 25px;
+}
+.header-text h1{
+  margin-top: 20px;
+  font-size: 49px;
+}
+.left{
+  width: 40%;
+}
+.right{
+  width: 50%;
+}
+.right img{
+  width: 400px ;
+  height: 400px;
+}
+
+} */
+@media screen and (max-width: 992px) {
+  /* .right{
+    /* width: 40%; */
+  } */
+  .right img{
+    height: 100px;
+    width: 100px;
+  }
+
 
 /* ---- Custom ScrollBar ------ */
 ::-webkit-scrollbar {
